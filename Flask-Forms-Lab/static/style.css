@@ -4,6 +4,10 @@ body {font-family: Arial, Helvetica, sans-serif;background-color: Black;}
 h2{
 color: white;}
 
+h3{
+  color:white;
+}
+
 .input-container {
   display: -ms-flexbox; /* IE10 */
   display: flex;

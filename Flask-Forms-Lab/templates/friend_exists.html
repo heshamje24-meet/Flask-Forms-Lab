@@ -9,8 +9,10 @@
 
 </head>
 <body>
-
-
+   <ul>
+        {% for friend in friends %}
+            <li><a href="https://www.google.com/search?q={{ friend }}" target="_blank">{{ friend }}</a></li>
+        {% endfor %}
 
 </body>
 </html>
