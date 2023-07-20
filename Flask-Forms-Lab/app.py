@@ -26,16 +26,12 @@ def login():
           else:
             return render_template('login.html',message='Invalid credentials. Please try again')
      else:
-     	return redirect(url_for('home.html'))
+     	return redirect(url_for('home'))
           
 @app.route('/friends_exist/<string:name>',methods=['GET','POST'])
 def friend_exists(name):
-    exists = name
-    return render_template('friend_exists.html', name=name, friends=facebook_friends)
-
-        
+      exists = name
+      return render_template('friend_exists.html', name=name, friends=facebook_friends)
 
 if __name__ == "__main__":  # Makes sure this is the main process
-	app.run( # Starts the site
-    debug=True
-	)
+	  app.run(debug=True)
